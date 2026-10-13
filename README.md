@@ -7,6 +7,7 @@ A lightweight Python (FastAPI) boilerplate agent designed for testing and deploy
 * **Runtime:** Python 3.10+
 * **Deployment Target:** Alternate Clouds (`acc`)
 
+
 ## Quickstart / Local Testing
 1. Clone the repository:
    ```bash
@@ -20,6 +21,7 @@ A lightweight Python (FastAPI) boilerplate agent designed for testing and deploy
 3. Run locally:
    ```bash
    uvicorn main:app --reload --port 8000
+
 
 ## Deploying to Alternate Clouds
 Deploy this repository directly using the Alternate Clouds CLI:
