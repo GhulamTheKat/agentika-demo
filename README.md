@@ -12,3 +12,16 @@ A lightweight Python (FastAPI) boilerplate agent designed for testing and deploy
    ```bash
    git clone [https://github.com/your-username/agentika-demo.git](https://github.com/your-username/agentika-demo.git)
    cd agentika-demo
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3. Run locally:
+   ```bash
+   uvicorn main:app --reload --port 8000
+
+## Deploying to Alternate Clouds
+Deploy this repository directly using the Alternate Clouds CLI:
+   ```bash
+   acc services create --kind github --repo your-username/agentika-demo --port 8000
