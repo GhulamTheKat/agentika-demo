@@ -1,29 +1,22 @@
-# Agentika 2.0 Demo Agent
+# Agentika 2.0 - Custom Agent Demo 🚀
 
-A lightweight Python (FastAPI) boilerplate agent designed for testing and deploying applications on **Alternate Clouds** during the **NaSCon Agentika 2.0 Hackathon**.
+A minimal, 3-file FastAPI boilerplate demonstrating how to deploy custom Python code on **Alternate Clouds** for the NaSCon Agentika Hackathon.
 
-## Stack
-* **Framework:** FastAPI
-* **Runtime:** Python 3.10+
-* **Deployment Target:** Alternate Clouds (`acc`)
+## What's in this Repository?
+This repository contains the absolute minimum required to get a Python web server containerized and running:
 
+* `main.py`: The Python application code (a simple FastAPI server).
+* `requirements.txt`: The Python dependencies needed to run the code.
+* `Dockerfile`: The blueprint that tells Alternate Clouds how to build the environment and expose the correct port.
 
-## Quickstart / Local Testing
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/your-username/agentika-demo.git](https://github.com/your-username/agentika-demo.git)
-   cd agentika-demo
+## Deployment Instructions
+To deploy this custom agent to Alternate Clouds:
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+1. **Fork** this repository to your own GitHub account.
+2. Log in to your [Alternate Clouds Dashboard](https://clouds.alternatefutures.ai).
+3. Click **Add Service** -> **GitHub Repo** and authorize your GitHub account.
+4. Select your forked repository.
+5. **Crucial:** Ensure the deployment port is set to `8000` (as defined in the Dockerfile).
+6. Click Deploy!
 
-3. Run locally:
-   ```bash
-   uvicorn main:app --reload --port 8000
-
-
-## Deploying to Alternate Clouds
-Deploy this repository directly using the Alternate Clouds CLI:
-   ```bash
-   acc services create --kind github --repo your-username/agentika-demo --port 8000
+*Built for the NaSCon 2026 Agentika 2.0 Hackathon.*
